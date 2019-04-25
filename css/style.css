@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+#homesection {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
