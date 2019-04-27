@@ -3,17 +3,23 @@
   <head>
     <title>WakeBoarding</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <nav>
-      <ul>
-        <li><a href="#">Welcome</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Instructors</a></li>
-        <li><a href="#">Photos</a></li>
-        <li><a href="#">News</a></li>
-      </ul>
+      <div class="container">
+        <ul>
+          <li class="nav_list--item"><a href="#">Welcome</a></li>
+          <li class="nav_list--item"><a href="#">About</a></li>
+          <li class="nav_list--item"><a href="#">Instructors</a></li>
+          <li class="nav_list--item"><a href="#">Photos</a></li>
+          <li class="nav_list--item"><a href="#">News</a></li>
+        </ul>
+      </div>
     </nav>
 
     <div id="homesection">
@@ -21,14 +27,14 @@
         <source src="img/Wakeboarding_on_the_Lake.mp4" type="video/mp4" />
       </video>
       <div class="container">
-        <h1>Wakeboarding</h1>
+        <h1 class="homesection--title">Wakeboarding</h1>
       </div>
     </div>
 
-    <div id="welcome">
-      <div class="container">
-        <h2>Welcome!</h2>
-        <p>
+    <div id="welcome" class="parallax">
+      <div class="container inner">
+        <h2 class="welcome--title">Welcome!</h2>
+        <p class="welcome--info">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
           facilisis magna etiam tempor orci eu. Mollis nunc sed id semper risus
@@ -41,38 +47,39 @@
     </div>
 
     <div id="aboutevents">
-      <div class="container">
-        <div class="aboutevents_info">
-          <h3>About</h3>
-          <h4>Non pulvinar neque laoreet</h4>
-          <p>
+      <div class="aboutevents__container">
+        <div class="aboutevents__div aboutevents__div--one">
+          <h3 class="aboutevents--title">About</h3>
+          <h4 class="aboutevents--subtitle">Non pulvinar neque laoreet</h4>
+          <p class="aboutevents--info">
             At volutpat diam ut venenatis tellus in metus vulputate eu.
             Dignissim diam quis enim lobortis scelerisque fermentum dui. Ut
             tristique et egestas quis ipsum suspendisse ultrices gravida.
           </p>
-          <h4>Quis risus sed vulputate</h4>
-          <p>
+          <h4 class="aboutevents--subtitle">Quis risus sed vulputate</h4>
+          <p class="aboutevents--info">
             In metus vulputate eu scelerisque felis imperdiet proin fermentum
-            leo. Arcu vitae elementum curabitur vitae nunc sed velit. Venenatis
-            lectus magna fringilla urna porttitor rhoncus.
+            leo. Arcu vitae elementum curabitur vitae nunc sed velit.
           </p>
-          <a href="">Read More</a>
+          <a href="#" class="aboutevents--btn">Read More</a>
         </div>
-        <div class="aboutevents_info">
-          <h3>Events</h3>
-          <h4>Id velit ut tortor pretium viverra</h4>
-          <p>
+        <div class="aboutevents__div aboutevents__div--two">
+          <h3 class="aboutevents--title">Events</h3>
+          <h4 class="aboutevents--subtitle">
+            Id velit ut tortor pretium viverra
+          </h4>
+          <p class="aboutevents--info">
             Purus in massa tempor nec. Nibh mauris cursus mattis molestie a
             iaculis at erat pellentesque. Ullamcorper velit sed ullamcorper
             morbi tincidunt.
           </p>
-          <h4>Vitae justo eget magna</h4>
-          <p>
+          <h4 class="aboutevents--subtitle">Vitae justo eget magna</h4>
+          <p class="aboutevents--info">
             Sit amet justo donec enim diam vulputate ut pharetra. At in tellus
             integer feugiat scelerisque. Interdum posuere lorem ipsum dolor sit
             amet.
           </p>
-          <a href="">Read More</a>
+          <a href="#" class="aboutevents--btn">Read More</a>
         </div>
       </div>
       <!--Aboutevents Container-->
@@ -82,28 +89,28 @@
     <div id="instructors">
       <div class="container">
         <h2>Instructors</h2>
-        <div class="instructors-info">
-          <div class="info">
-            <img src="" alt="" />
-            <h4>Adi Granov</h4>
-            <p>
+        <div class="instructors__div">
+          <div class="instructors--frame">
+            <img src="" alt="" class="instructors__img" />
+            <h4 class="instructors--name">Adi Granov</h4>
+            <p class="instructors--info">
               Eget lorem dolor sed viverra. Id diam vel quam elementum pulvinar.
               Consectetur purus ut faucibus pulvinar elementum integer enim. Leo
               in vitae turpis massa sed elementum.
             </p>
           </div>
-          <div class="info">
-            <img src="" alt="" />
-            <h4>Lady Sif</h4>
-            <p>
+          <div class="instructors--frame">
+            <img src="" alt="" class="instructors__img" />
+            <h4 class="instructors--name">Lady Sif</h4>
+            <p class="instructors--info">
               Convallis a cras semper auctor. Amet volutpat consequat mauris
               nunc. Id velit ut tortor pretium viverra suspendisse potenti.
             </p>
           </div>
-          <div class="info">
-            <img src="" alt="" />
-            <h4>Agent Coulson</h4>
-            <p>
+          <div class="instructors--frame">
+            <img src="" alt="" class="instructors__img" />
+            <h4 class="instructors--name">Agent Coulson</h4>
+            <p class="instructors--info">
               Pulvinar mattis nunc sed blandit libero. Quam elementum pulvinar
               etiam non quam lacus suspendisse faucibus interdum. Turpis massa
               tincidunt dui ut ornare lectus sit amet.
@@ -118,19 +125,19 @@
 
     <div id="photos">
       <div class="container">
-        <h2>Photos</h2>
-        <p>
+        <h2 class="photos--title">Photos</h2>
+        <p class="photos--info">
           ulvinar mattis nunc sed blandit libero. Quam elementum pulvinar etiam
           non quam lacus suspendisse faucibus interdum.
         </p>
-        <div class="photo_images"></div>
-        <div class="photo_images"></div>
-        <div class="photo_images"></div>
-        <div class="photo_images"></div>
-        <div class="photo_images"></div>
-        <div class="photo_images"></div>
-        <div class="photo_images"></div>
-        <div class="photo_images"></div>
+        <div class="photo__img"></div>
+        <div class="photo__img"></div>
+        <div class="photo__img"></div>
+        <div class="photo__img"></div>
+        <div class="photo__img"></div>
+        <div class="photo__img"></div>
+        <div class="photo__img"></div>
+        <div class="photo__img"></div>
         <a href="#">See All</a>
       </div>
       <!--Photos Container-->
@@ -140,37 +147,37 @@
     <div id="news">
       <div class="container">
         <h2>News</h2>
-        <div class="news-info">
-          <div class="news-comp">
-            <div class="news-btn"></div>
-            <h3>
+        <div class="news__div">
+          <div class="news--comp">
+            <div class="news__btn"></div>
+            <h3 class="news--title">
               Laoreet id donec ultrices tincidunt arcu non sodales neque.
               Blandit libero ornare.
             </h3>
-            <p>
+            <p class="news--info">
               Aenean pharetra magna ac placerat vestibulum lectus mauris. Nibh
               sit amet commodo nulla facilisi nullam vehicula. A erat nam at
               lectus urna duis convallis.
             </p>
           </div>
-          <div class="news-comp">
-            <div class="news-btn"></div>
-            <h3>
+          <div class="news--comp">
+            <div class="news__btn"></div>
+            <h3 class="news--title">
               Et netus et malesuada fames ac turpis egestas maecenas pharetra.
             </h3>
-            <p>
+            <p class="news--info">
               Pellentesque habitant morbi tristique senectus et. Orci eu
               lobortis elementum nibh. Ut faucibus pulvinar elementum integer
               enim neque
             </p>
           </div>
-          <div class="news-comp">
-            <div class="news-btn"></div>
-            <h3>
+          <div class="news--comp">
+            <div class="news__btn"></div>
+            <h3 class="news--title">
               Est ultricies integer quis auctor elit sed. Eu feugiat pretium
               nibh ipsum.
             </h3>
-            <p>
+            <p class="news--info">
               In nibh mauris cursus mattis molestie a iaculis. Dictum varius
               duis at consectetur lorem. Elementum nibh tellus molestie nunc non
               blandit massa enim.
@@ -185,11 +192,11 @@
 
     <div id="map">
       <div class="container">
-        <h3>
+        <h3 class="map--title">
           Adipiscing diam donec adipiscing tristique risus nec feugiat in
           fermentum.
         </h3>
-        <p>
+        <p class="map--info">
           Faucibus purus in massa tempor nec feugiat. Sit amet facilisis magna
           etiam tempor. Turpis egestas sed tempus urna et pharetra. Id volutpat
           lacus laoreet non curabitur gravida arcu ac tortor.

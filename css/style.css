@@ -4,8 +4,23 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
 a {
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -27,4 +42,92 @@ nav li {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
+}
+/*=====================================WELCOME SECTION====================================*/
+.parallax {
+  background: linear-gradient(
+      rgba(37, 162, 197, 0.45),
+      rgba(37, 162, 197, 0.45)
+    ),
+    url(../img/kalisa-veer-684040-unsplash.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.inner {
+  position: relative;
+  height: 300px;
+  color: white;
+  text-align: center;
+  padding: 60px;
+  text-transform: uppercase;
+}
+
+.welcome--title {
+  font-size: 3rem;
+}
+
+.welcome--info {
+  font-size: 1.2rem;
+  padding: 0 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  .inner {
+    height: 200px;
+    padding: 30px;
+  }
+  .welcome--title {
+    font-size: 2rem;
+  }
+  .welcome--info {
+    font-size: 0.7rem;
+    padding: 0px;
+  }
+}
+
+/*=====================================ABOUTEVENTS SECTION====================================*/
+.aboutevents--btn {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: white;
+}
+.aboutevents--btn:link {
+  color: white;
+}
+
+.aboutevents__container {
+  display: flex;
+  flex-direction: row;
+}
+.aboutevents__div {
+  width: 50%;
+  height: 400px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+
+  padding: 55px;
+}
+
+.aboutevents__div--one {
+  background: linear-gradient(rgba(224, 27, 73, 0.87), rgba(224, 27, 72, 0.8)),
+    url(../img/steven-welch-124749-unsplash.jpg) top center no-repeat;
+  background-size: cover;
+}
+.aboutevents__div--two {
+  background: linear-gradient(rgba(230, 156, 5, 0.45), rgba(230, 156, 5, 0.45)),
+    url(../img/wakeboard-264907_1920.jpg) top center no-repeat;
+  background-size: cover;
+}
+
+.aboutevents--title {
+  font-size: 3rem;
+}
+.aboutevents--subtitle {
+  font-size: 1.3rem;
+}
+.aboutevents--info {
+  font-size: 0.7rem;
+  padding: 0.9rem;
+  line-height: 1.7;
 }
