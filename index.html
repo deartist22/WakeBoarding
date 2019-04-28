@@ -10,8 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <nav>
-      <div class="container">
+    <div class="container">
+      <nav class="container">
         <ul>
           <li class="nav_list--item"><a href="#">Welcome</a></li>
           <li class="nav_list--item"><a href="#">About</a></li>
@@ -19,16 +19,21 @@
           <li class="nav_list--item"><a href="#">Photos</a></li>
           <li class="nav_list--item"><a href="#">News</a></li>
         </ul>
-      </div>
-    </nav>
-
+      </nav>
+    </div>
     <div id="homesection">
-      <video class="main_video_element" autoplay muted>
-        <source src="img/Wakeboarding_on_the_Lake.mp4" type="video/mp4" />
-      </video>
+      <div class="homesection__img"></div>
       <div class="container">
-        <h1 class="homesection--title">Wakeboarding</h1>
+        <div class="homesection__div--title">
+          <h1 class="homesection--title1">Wake</h1>
+          <h2 class="homesection--title2">boarding</h2>
+        </div>
       </div>
+    </div>
+
+    <div class="call-to-action">
+      <h2>Start to the journey now</h2>
+      <p><a href="#" class="btn">Join Now</a></p>
     </div>
 
     <div id="welcome" class="parallax">
@@ -61,7 +66,7 @@
             In metus vulputate eu scelerisque felis imperdiet proin fermentum
             leo. Arcu vitae elementum curabitur vitae nunc sed velit.
           </p>
-          <a href="#" class="aboutevents--btn">Read More</a>
+          <a href="#" class="btn">Read More</a>
         </div>
         <div class="aboutevents__div aboutevents__div--two">
           <h3 class="aboutevents--title">Events</h3>
@@ -79,7 +84,7 @@
             integer feugiat scelerisque. Interdum posuere lorem ipsum dolor sit
             amet.
           </p>
-          <a href="#" class="aboutevents--btn">Read More</a>
+          <a href="#" class="btn">Read More</a>
         </div>
       </div>
       <!--Aboutevents Container-->

@@ -15,43 +15,88 @@ h6 {
   text-transform: uppercase;
 }
 
-p {
+body {
   font-family: "Roboto", sans-serif;
+  color: white;
+  text-transform: uppercase;
 }
 
 a {
+  color: inherit;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
 
+a:link {
+  color: inherit;
+}
+
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 10px 20px;
+}
+
+nav {
+  position: fixed;
 }
 
 nav ul {
   display: flex;
   justify-content: space-around;
-  align-content: center;
 }
 
 nav li {
   list-style-type: none;
-  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.call-to-action {
+  background-color: #333;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.call-to-action p {
+  margin-left: 10px;
 }
 
 #homesection {
   position: relative;
   min-height: 100vh;
-  overflow: hidden;
+}
+
+.homesection__img {
+  background: url(../img/lake-887828_1920.jpg) top no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.homesection__div--title {
+  padding: 280px 30px;
+  line-height: 0.7;
+}
+
+.homesection--title1 {
+  font-size: 8rem;
+}
+
+.homesection--title2 {
+  font-size: 4.5rem;
 }
 /*=====================================WELCOME SECTION====================================*/
 .parallax {
-  background: linear-gradient(
-      rgba(37, 162, 197, 0.45),
-      rgba(37, 162, 197, 0.45)
-    ),
-    url(../img/kalisa-veer-684040-unsplash.jpg) 100% 100% no-repeat;
+  background: url(../img/kalisa-veer-684040-unsplash.jpg) 100% 100% no-repeat;
   background-size: cover;
 }
 .inner {
@@ -89,8 +134,6 @@ nav li {
 .aboutevents--btn {
   background-color: rgba(0, 0, 0, 0.75);
   padding: 10px 20px;
-  text-transform: uppercase;
-  color: white;
 }
 .aboutevents--btn:link {
   color: white;
@@ -159,8 +202,7 @@ nav li {
 }
 /*=====================================INSTRUCTORS SECTION====================================*/
 #instructors {
-  background: linear-gradient(rgba(64, 64, 64, 0.8), rgba(64, 64, 64, 0.8)),
-    url(../img/lake-887828_1920.jpg) top center no-repeat;
+  background: url(../img/lake-887828_1920.jpg) top center no-repeat;
   background-size: cover;
   width: 100%;
   height: 400px;
