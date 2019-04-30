@@ -19,6 +19,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: white;
   text-transform: uppercase;
+  background-color: #191919;
 }
 
 a {
@@ -57,7 +58,6 @@ nav li {
 }
 
 .call-to-action {
-  background-color: #333;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -116,20 +116,6 @@ nav li {
   padding: 0 60px;
 }
 
-@media only screen and (max-width: 768px) {
-  .inner {
-    padding: 30px;
-  }
-  .welcome--title {
-    font-size: 2rem;
-  }
-  .welcome--info {
-    font-size: 0.7rem;
-    padding: 12px 26px;
-    line-height: 1.4;
-  }
-}
-
 /*=====================================ABOUTEVENTS SECTION====================================*/
 .aboutevents--btn {
   background-color: rgba(0, 0, 0, 0.75);
@@ -175,31 +161,6 @@ nav li {
   line-height: 1.7;
 }
 
-@media only screen and (max-width: 768px) {
-  .aboutevents--btn {
-    padding: 8px 13px;
-  }
-  .aboutevents__container {
-    display: flex;
-    flex-direction: column;
-  }
-  .aboutevents__div {
-    width: 100%;
-    height: 300px;
-    padding: 25px;
-  }
-  .aboutevents--title {
-    font-size: 2rem;
-  }
-  .aboutevents--subtitle {
-    font-size: 1rem;
-  }
-  .aboutevents--info {
-    font-size: 0.7rem;
-    padding: 12px 50px;
-    line-height: 1.4;
-  }
-}
 /*=====================================INSTRUCTORS SECTION====================================*/
 #instructors {
   background: url(../img/lake-887828_1920.jpg) top center no-repeat;
@@ -235,6 +196,7 @@ nav li {
   font-size: 0.7rem;
   padding: 5px 70px;
 }
+
 @media only screen and (max-width: 768px) {
   .instructors__div {
     display: grid;
@@ -252,4 +214,121 @@ nav li {
   .instructors--info {
     font-size: 0.7rem;
   }
+}
+/*=====================================MEDIA QUERIES====================================*/
+@media (max-width: 599px) {
+  .inner {
+    padding: 35px;
+  }
+  .welcome--title {
+    font-size: 2rem;
+  }
+  .welcome--info {
+    font-size: 0.7rem;
+    padding: 10px 15px;
+    line-height: 1.4;
+  }
+  /*=================================ABOUTEVENTS SECTION==================================*/
+  .aboutevents--btn {
+    padding: 8px 13px;
+    margin-top: 5px;
+  }
+  .aboutevents__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutevents__div {
+    width: 100%;
+    height: 300px;
+    padding: 25px;
+  }
+  .aboutevents--title {
+    font-size: 2rem;
+  }
+  .aboutevents--subtitle {
+    font-size: 1rem;
+  }
+  .aboutevents--info {
+    font-size: 0.7rem;
+    padding: 10px 15px;
+    line-height: 1.1;
+  }
+}
+
+/*=================================PHOTOS SECTION==================================*/
+.photos__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 250px 250px;
+  padding-top: 40px;
+}
+
+.photos--title {
+  padding-top: 50px;
+  font-size: 3rem;
+}
+
+.pic1 {
+  background: url(../img/athletes-1597680_1920.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.pic2 {
+  background: url(../img/boat-1603797_1920.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.pic3 {
+  background: url(../img/kalisa-veer-696981-unsplash.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.pic4 {
+  background: url(../img/kalisa-veer-684040-unsplash.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.pic5 {
+  background: url(../img/terry-crovo-110981-unsplash.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.pic6 {
+  background: url(../img/steven-welch-124749-unsplash.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.pic7 {
+  background: url(../img/marvin-meyer-111904-unsplash.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.pic8 {
+  background: url(../img/lake-887828_1920.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.photos--btn {
+  padding-top: 30px;
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+}
+
+@media (min-width: 900px) {
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+}
+
+@media (min-width: 1800px) {
 }
