@@ -134,7 +134,6 @@ nav li {
   height: 350px;
   color: white;
   text-align: center;
-
   padding: 45px 87px;
 }
 
@@ -312,10 +311,79 @@ nav li {
   padding-top: 30px;
 }
 
-@media (min-width: 600px) {
-}
+@media (min-width: 500px) {
+  .btn {
+    padding: 8px 14px;
+  }
+  .call-to-action--title {
+    font-size: 1.2rem;
+  }
+  .welcome--title {
+    font-size: 2.5rem;
+  }
+  .welcome--info {
+    font-size: 0.75rem;
+    padding: 10px 40px;
+  }
+  .aboutevents--title {
+    font-size: 2.5rem;
+  }
+  .aboutevents--subtitle {
+    font-size: 1.2rem;
+  }
+  .aboutevents--info {
+    font-size: 0.75rem;
+    padding: 10px 40px;
+  }
+  .instructors__div {
+    display: flex;
+    flex-direction: column;
+  }
+  .instructors--frame {
+    padding-top: 5px;
+    display: flex;
+    flex-flow: row;
+  }
+  .instructors__header {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .instructors__img {
+    width: 70px;
+    height: 95px;
+  }
+  .instructors--name--container {
+    width: 60%;
+  }
+  .instructors--name {
+    font-size: 0.9rem;
+    padding: 10px 5px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .instructors--info {
+    font-size: 0.7rem;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  .photos__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px;
+    padding-top: 40px;
+  }
+  .photos--title {
+    font-size: 2.5rem;
+    padding-top: 20px;
+  }
+  .photos--btn {
+    padding-top: 20px;
+  }
 
-@media (min-width: 600px) and (max-width: 899px) {
+  .photos--info {
+    font-size: 0.75rem;
+  }
 }
 
 @media (min-width: 900px) {
