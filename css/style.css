@@ -411,6 +411,25 @@ nav li {
     display: flex;
     flex-flow: column;
   }
+  #map {
+    background: url(../img/map.jpg) center center fixed no-repeat;
+    background-size: cover;
+  }
+
+  .map--inner {
+    padding: 30px;
+  }
+
+  .map--title {
+    font-size: 1.2rem;
+  }
+  .map--info {
+    font-size: 0.75rem;
+  }
+
+  footer {
+    height: 50px;
+  }
 }
 
 @media (min-width: 900px) {
