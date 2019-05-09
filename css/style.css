@@ -57,202 +57,97 @@ nav li {
   padding-top: 10px;
 }
 
-.call-to-action {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
+.btn {
+  padding: 8px 14px;
 }
-.call-to-action p {
-  margin-left: 10px;
-}
-
-#homesection {
-  position: relative;
-  min-height: 100vh;
-}
-
-.homesection__img {
-  background: url(../img/lake-887828_1920.jpg) top no-repeat;
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-.homesection__div--title {
-  padding: 280px 30px;
-  line-height: 0.7;
-}
-
-.homesection--title1 {
-  font-size: 8rem;
-}
-
-.homesection--title2 {
-  font-size: 4.5rem;
-}
-/*=====================================WELCOME SECTION====================================*/
-.parallax {
-  background: url(../img/kalisa-veer-684040-unsplash.jpg) 100% 100% no-repeat;
-  background-size: cover;
-}
-.inner {
-  position: relative;
-  height: 300px;
-  color: white;
-  text-align: center;
-  padding: 60px;
-}
-
-.welcome--title {
-  font-size: 3rem;
-}
-
-.welcome--info {
+.call-to-action--title {
   font-size: 1.2rem;
-  padding: 0 60px;
 }
-
-/*=====================================ABOUTEVENTS SECTION====================================*/
-.aboutevents--btn {
-  background-color: rgba(0, 0, 0, 0.75);
-  padding: 10px 20px;
+.welcome--title {
+  font-size: 2.5rem;
 }
-.aboutevents--btn:link {
-  color: white;
+.welcome--info {
+  font-size: 0.75rem;
+  padding: 10px 40px;
 }
-
 .aboutevents__container {
   display: flex;
   flex-direction: row;
 }
 .aboutevents__div {
-  width: 50%;
+  width: 100%;
   height: 350px;
   color: white;
   text-align: center;
   padding: 45px 87px;
 }
-
-.aboutevents__div--one {
-  background: linear-gradient(rgba(224, 27, 73, 2), rgba(224, 27, 72, 0.5)),
-    url(../img/steven-welch-124749-unsplash.jpg) top center no-repeat;
-  background-size: cover;
-}
-.aboutevents__div--two {
-  background: linear-gradient(rgba(230, 156, 5, 0.5), rgba(230, 156, 5, 2)),
-    url(../img/wakeboard-264907_1920.jpg) top center no-repeat;
-  background-size: cover;
-}
-
 .aboutevents--title {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .aboutevents--subtitle {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .aboutevents--info {
-  font-size: 0.7rem;
-  padding: 0.9rem;
-  line-height: 1.7;
+  font-size: 0.75rem;
+  padding: 10px 40px;
 }
 
-/*=====================================INSTRUCTORS SECTION====================================*/
 #instructors {
-  background: linear-gradient( rgba(139, 170, 255, 2), rgba(3, 67, 243, 0.5));
+  background: linear-gradient(rgba(139, 170, 255, 2), rgba(3, 67, 243, 0.5));
   background-size: cover;
   width: 100%;
   height: 400px;
   color: white;
 }
 
-.instructors__header {
-  font-size: 3rem;
-  text-align: center;
-  padding-top: 40px;
-}
-
 .instructors__div {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 240px;
+  display: flex;
+  flex-direction: column;
 }
-
 .instructors--frame {
+  padding-top: 5px;
+  display: flex;
+  flex-flow: row;
+}
+.instructors__header {
+  font-size: 2.5rem;
   text-align: center;
-  padding-top: 20px;
 }
 .instructors__img {
-  width: 100px;
-  height: 125px;
+  width: 70px;
+  height: 95px;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
-
+.instructors--name--container {
+  width: 60%;
+}
+.instructors--name {
+  font-size: 0.9rem;
+  padding: 10px 5px;
+  margin-top: 20px;
+  text-align: center;
+}
 .instructors--info {
   font-size: 0.7rem;
-  padding: 5px 70px;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: left;
 }
-
-@media only screen and (max-width: 768px) {
-  .instructors__div {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 200px 200px;
-    grid-gap: 10px;
-  }
-  .instructors__header {
-    font-size: 2rem;
-    padding-top: 20px;
-  }
-  .instructors--name {
-    font-size: 1rem;
-  }
-  .instructors--info {
-    font-size: 0.7rem;
-  }
-}
-
-  /*=================================ABOUTEVENTS SECTION==================================*/
-  .aboutevents--btn {
-    padding: 8px 13px;
-    margin-top: 5px;
-  }
-  .aboutevents__container {
-    display: flex;
-    flex-direction: column;
-  }
-  .aboutevents__div {
-    width: 100%;
-    height: 300px;
-    padding: 25px;
-  }
-  .aboutevents--title {
-    font-size: 2rem;
-  }
-  .aboutevents--subtitle {
-    font-size: 1rem;
-  }
-  .aboutevents--info {
-    font-size: 0.7rem;
-    padding: 10px 15px;
-    line-height: 1.1;
-  }
-}
-
-/*=================================PHOTOS SECTION==================================*/
 .photos__container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 250px 250px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 150px 150px 150px;
   padding-top: 40px;
 }
-
 .photos--title {
-  padding-top: 50px;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  padding-top: 20px;
+}
+.photos--btn {
+  padding-top: 20px;
+}
+.photos--info {
+  font-size: 0.75rem;
 }
 
 .pic1 {
@@ -295,150 +190,249 @@ nav li {
   background-size: cover;
 }
 
-.photos--btn {
-  padding-top: 30px;
+#news {
+  background: url(../img/steven-welch-124749-unsplash.jpg) center center
+    no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+  margin-top: 25px;
+}
+.news__header {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.news--title {
+  font-size: 1.2rem;
+  padding: 0 40px;
+}
+.news--info {
+  font-size: 0.75rem;
+  padding: 10px 60px;
+}
+.news__div {
+  display: flex;
+  flex-direction: column;
+}
+.news--comp {
+  padding-top: 5px;
+  display: flex;
+  flex-flow: column;
+}
+#map {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 2)),
+    url(../img/map.jpg) center center fixed no-repeat;
+  background-size: cover;
 }
 
-@media (min-width: 500px) {
-  .btn {
-    padding: 8px 14px;
-  }
-  .call-to-action--title {
-    font-size: 1.2rem;
-  }
-  .welcome--title {
-    font-size: 2.5rem;
-  }
-  .welcome--info {
-    font-size: 0.75rem;
-    padding: 10px 40px;
-  }
-  .aboutevents--title {
-    font-size: 2.5rem;
-  }
-  .aboutevents--subtitle {
-    font-size: 1.2rem;
-  }
-  .aboutevents--info {
-    font-size: 0.75rem;
-    padding: 10px 40px;
-  }
-  .instructors__div {
-    display: flex;
-    flex-direction: column;
-  }
-  .instructors--frame {
-    padding-top: 5px;
-    display: flex;
-    flex-flow: row;
-  }
-  .instructors__header {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  .instructors__img {
-    width: 70px;
-    height: 95px;
-  }
-  .instructors--name--container {
-    width: 60%;
-  }
-  .instructors--name {
-    font-size: 0.9rem;
-    padding: 10px 5px;
-    margin-top: 20px;
-    text-align: center;
-  }
-  .instructors--info {
-    font-size: 0.7rem;
-    padding: 10px;
-    margin-top: 10px;
-    text-align: left;
-  }
-  .photos__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 150px 150px 150px;
-    padding-top: 40px;
-  }
-  .photos--title {
-    font-size: 2.5rem;
-    padding-top: 20px;
-  }
-  .photos--btn {
-    padding-top: 20px;
-  }
-  .photos--info {
-    font-size: 0.75rem;
-  }
-  #news {
-    background: url(../img/steven-welch-124749-unsplash.jpg) center center
-      no-repeat;
-    background-size: cover;
-    padding: 30px 0;
-    margin-top: 25px;
-  }
-  .news__header {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  .news--title {
-    font-size: 1.2rem;
-    padding: 0 40px;
-  }
-  .news--info {
-    font-size: 0.75rem;
-    padding: 10px 60px;
-  }
-  .news__div {
-    display: flex;
-    flex-direction: column;
-  }
-  .news--comp {
-    padding-top: 5px;
-    display: flex;
-    flex-flow: column;
-  }
-  #map {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 2)),
-      url(../img/map.jpg) center center fixed no-repeat;
-    background-size: cover;
-  }
+.map--inner {
+  padding: 30px;
+}
 
-  .map--inner {
-    padding: 30px;
-  }
+.map--title {
+  font-size: 1.2rem;
+}
+.map--info {
+  font-size: 0.75rem;
+}
+.map--socialicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.fab--back {
+  position: relative;
+  background-color: orange;
+  width: 26px;
+  height: 28px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
 
-  .map--title {
-    font-size: 1.2rem;
-  }
-  .map--info {
-    font-size: 0.75rem;
-  }
-  .map--socialicons {
+.fab {
+  top: -2px;
+  left: -1px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+footer {
+  height: 50px;
+}
+
+@media screen and (min-width: 500px) {
+  .call-to-action {
+    text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-  }
-  .fab--back {
-    position: relative;
-    background-color: orange;
-    width: 26px;
-    height: 28px;
-    border-radius: 10px;
-    margin-top: 15px;
-  }
-
-  .fab {
-    top: -2px;
-    left: -1px;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-  }
-
-  footer {
+    justify-content: center;
+    align-items: center;
     height: 50px;
+  }
+  .call-to-action p {
+    margin-left: 10px;
+  }
+
+  #homesection {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .homesection__img {
+    background: url(../img/lake-887828_1920.jpg) top no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .homesection__div--title {
+    padding: 280px 30px;
+    line-height: 0.7;
+  }
+
+  .homesection--title1 {
+    font-size: 8rem;
+  }
+
+  .homesection--title2 {
+    font-size: 4.5rem;
+  }
+  /*=====================================WELCOME SECTION====================================*/
+  .parallax {
+    background: url(../img/kalisa-veer-684040-unsplash.jpg) 100% 100% no-repeat
+      fixed;
+    background-size: cover;
+  }
+  .inner {
+    position: relative;
+    height: 300px;
+    color: white;
+    text-align: center;
+    padding: 60px;
+  }
+
+  .welcome--title {
+    font-size: 3rem;
+  }
+
+  .welcome--info {
+    font-size: 1.2rem;
+    padding: 0 60px;
+  }
+
+  /*=====================================ABOUTEVENTS SECTION====================================*/
+  .aboutevents--btn {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 10px 20px;
+  }
+  .aboutevents--btn:link {
+    color: white;
+  }
+  .aboutevents__container {
+    display: flex;
+    flex-direction: row;
+  }
+  .aboutevents__div {
+    width: 50%;
+    height: 350px;
+    color: white;
+    text-align: center;
+    padding: 45px 87px;
+  }
+
+  .aboutevents__div--one {
+    background: linear-gradient(rgba(224, 27, 73, 2), rgba(224, 27, 72, 0.5)),
+      url(../img/steven-welch-124749-unsplash.jpg) top center no-repeat;
+    background-size: cover;
+  }
+  .aboutevents__div--two {
+    background: linear-gradient(rgba(230, 156, 5, 0.5), rgba(230, 156, 5, 2)),
+      url(../img/wakeboard-264907_1920.jpg) top center no-repeat;
+    background-size: cover;
+  }
+
+  .aboutevents--title {
+    font-size: 3rem;
+  }
+  .aboutevents--subtitle {
+    font-size: 1.3rem;
+  }
+  .aboutevents--info {
+    font-size: 0.7rem;
+    padding: 0.9rem;
+    line-height: 1.7;
+  }
+
+  /*=====================================INSTRUCTORS SECTION====================================*/
+
+  .instructors__header {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .instructors__div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 240px;
+  }
+
+  .instructors--frame {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .instructors__img {
+    width: 100px;
+    height: 125px;
+  }
+
+  .instructors--info {
+    font-size: 0.7rem;
+    padding: 5px 70px;
+  }
+
+  /*=================================ABOUTEVENTS SECTION==================================*/
+  .aboutevents--btn {
+    padding: 8px 13px;
+    margin-top: 5px;
+  }
+  .aboutevents__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutevents__div {
+    width: 100%;
+    height: 300px;
+    padding: 25px;
+  }
+  .aboutevents--title {
+    font-size: 2rem;
+  }
+  .aboutevents--subtitle {
+    font-size: 1rem;
+  }
+  .aboutevents--info {
+    font-size: 0.7rem;
+    padding: 10px 15px;
+    line-height: 1.1;
+  }
+
+  /*=================================PHOTOS SECTION==================================*/
+  .photos__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px 250px;
+    padding-top: 40px;
+  }
+
+  .photos--title {
+    padding-top: 50px;
+    font-size: 3rem;
+  }
+
+  .photos--btn {
+    padding-top: 30px;
   }
 }
 
